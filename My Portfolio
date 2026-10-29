@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Saina Bandahala Sakirin | My Portfolio</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background: linear-gradient(180deg, #dceeff, #c9c0ff, #ffe0ed);
+    color: #514777;
+    padding: 20px 12px;
+    line-height: 1.7;
+}
+
+header, .card {
+    max-width: 720px;
+    margin: 20px auto;
+    padding: 24pxñ
+    border: 2px solid white;
+    border-radius: 25px;
+    box-shadow: 0 6px 18px #6c659522;
+}
+
+header {
+    background: #ffffff;
+    text-align: center;
+}
+
+header h1 {
+    color: #6558b5;
+    font-size: 29px;
+}
+
+header p {
+    color: #b078ad;
+    font-style: italic;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 18px;
+    color: #6658a6;
+}
+
+.intro {
+    background: #fff4df;
+    text-align: center;
+}
+
+.about {
+    background: #e8e4ff;
+}
+
+.personal {
+    background: #f9e9ff;
+}
+
+.skills {
+    background: #fff0dd;
+}
+
+.love {
+    background: #ffe8f0;
+}
+
+.hobbies {
+    background: #e1f8eb;
+}
+
+.projects {
+    background: #e3f3ff;
+}
+
+.contact {
+    background: #f0eaff;
+    text-align: center;
+}
+
+.profile {
+    display: block;
+    width: 155px;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    outline: 3px solid #c2a5ff;
+    margin: 18px auto;
+    background: #e4eaff;
+}
+
+.info {
+    padding: 10px 4px;
+    border-bottom: 1px solid white;
+    overflow-wrap: anywhere;
+}
+
+.skill {
+    margin: 16px 0;
+}
+
+.bar {
+    width: 100%;
+    height: 12px;
+    background: #e8d8ee;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: linear-gradient(90deg, #9cafff, #ed9dc9);
+    border-radius: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.item {
+    background: #ffffffb8;
+    padding: 15px 8px;
+    border-radius: 18px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.emoji {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.item h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.item p {
+    font-size: 13px;
+}
+
+.project-box {
+    background: #d2f2e0;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.facebook {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 11px 23px;
+    background: #1877f2;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 5px;
+    font-size: 13px;
+}
+
+@media (max-width: 400px) {
+    header, .card {
+        padding: 18px 13px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .grid {
+        gap: 6px;
+    }
+
+    .item {
+        padding: 12px 5px;
+    }
+
+    .item h3 {
+        font-size: 13px;
+    }
+
+    .item p {
+        font-size: 12px;
+    }
+
+    .emoji {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌷 My Portfolio ♡</h1>
+    <p>Where Creativity Meets Passion</p>
+</header>
+
+<section class="card intro">
+    <h2>👋 Hello, I'm Saina!</h2>
+
+    <!-- Ilagay ang profile.jpg sa parehong folder ng index.html -->
+    <img src="profile.jpg"
+         alt="My Profile Picture"
+         class="profile">
+
+    <p>Welcome to my personal portfolio! 💗</p>
+
+    <p>
+        I am a student who enjoys creativity,
+        discovering new ideas, and learning every day.
+    </p>
+</section>
+
+<section class="card about">
+    <h2>💡 About Me</h2>
+
+    <p>
+        Hello! I am Saina Bandahala Sakirin.
+        I am a student at Mindanao State University.
+        I enjoy learning new things and exploring
+        my interests and abilities. 🌸
+    </p>
+</section>
+
+<section class="card personal">
+    <h2>👤 Personal Information</h2>
+
+    <div class="info">
+        <b>Full Name:</b> Saina Bandahala Sakirin
+    </div>
+
+    <div class="info">
+        <b>Date of Birth:</b> March 08, 2008
+    </div>
+
+    <div class="info">
+        <b>Address:</b> Tulay, Zone 3
+    </div>
+
+    <div class="info">
+        <b>School:</b> Mindanao State University
+    </div>
+</section>
+
+<section class="card skills">
+    <h2>✨ My Skills</h2>
+
+    <div class="skill">
+        🎨 Creativity
+        <div class="bar">
+            <div class="fill" style="width:85%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        📚 Learning
+        <div class="bar">
+            <div class="fill" style="width:80%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        💻 HTML and CSS
+        <div class="bar">
+            <div class="fill" style="width:70%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        💡 Problem Solving
+        <div class="bar">
+            <div class="fill" style="width:70%"></div>
+        </div>
+    </div>
+</section>
+
+<section class="card love">
+    <h2>💗 What I Love</h2>
+
+    <div class="grid">
+        <div class="item">
+            <span class="emoji">🍳</span>
+            <h3>Cooking</h3>
+            <p>I love making delicious food.</p>
+        </div>
+
+        <div class="item">
+            <span class="emoji">🌅</span>
+            <h3>Peaceful Moments</h3>
+            <p>I enjoy quiet and relaxing moments.</p>
+        </div>
+
+        <div class="item">
+            <span class="emoji">📚</span>
+            <h3>Learning New Things</h3>
+            <p>I enjoy discovering new ideas.</p>
+        </div>
+    </div>
+</section>
+
+<section class="card hobbies">
+    <h2>🌿 My Hobbies</h2>
+
+    <div class="grid">
+        <div class="item">
+            <span class="emoji">🎵</span>
+            <h3>Listening to Music</h3>
+            <p>I enjoy listening to my favorite songs.</p>
+        </div>
+
+        <div class="item">
+            <span class="emoji">🎬</span>
+            <h3>Watching Movies</h3>
+            <p>I love watching movies in my free time.</p>
+        </div>
+
+        <div class="item">
+            <span class="emoji">🌳</span>
+            <h3>Enjoying Nature</h3>
+            <p>I appreciate beautiful views and nature.</p>
+        </div>
+    </div>
+</section>
+
+<section class="card projects">
+    <h2>🌟 My Projects</h2>
+
+    <div class="project-box">
+        <h3>💻 Personal Portfolio Website</h3>
+        <p>
+            This is my school project, created to
+            introduce myself and share my skills,
+            interests, and hobbies.
+        </p>
+    </div>
+</section>
+
+<section class="card contact">
+    <h2>📬 Let's Connect!</h2>
+
+    <p>Thank you for visiting my portfolio! 💗</p>
+
+    <a class="facebook"
+       href="https://www.facebook.com/shaena.sakirin"
+       target="_blank"
+       rel="noopener noreferrer">
+       📘 Visit My Facebook
+    </a>
+</section>
+
+<footer>
+    © 2026 Saina Bandahala Sakirin
+    <br>
+    Made with 💗 and creativity
+</footer>
+
+</body>
+</html
